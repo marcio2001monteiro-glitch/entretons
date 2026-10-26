@@ -1,0 +1,170 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Descubra maquiagem, autocuidado e inspiração para realçar a beleza do seu jeito."
+    />
+    <meta name="theme-color" content="#fbf7f1" />
+    <title>Entre Tons — beleza do seu jeito</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <script src="shop-store.js" defer></script>
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <div class="announcement">
+      <span>BELEZA SEM REGRAS, DO SEU JEITO</span>
+      <span class="announcement-separator" aria-hidden="true">✳</span>
+      <span>PEDIDOS PELO WHATSAPP · COMBINAMOS A ENTREGA</span>
+    </div>
+
+    <header class="site-header">
+      <a class="wordmark" href="#" aria-label="Entre Tons, página inicial"><span class="brand-primary">entre</span><span class="brand-secondary">tons</span><i>.</i></a>
+
+      <button class="menu-toggle" type="button" aria-label="Abrir menu" aria-expanded="false">
+        <span></span><span></span>
+      </button>
+
+      <nav class="main-nav" aria-label="Navegação principal">
+        <a href="#novidades">Novidades</a>
+        <a href="#produtos">Maquiagem</a>
+        <a href="#categorias">Autocuidado</a>
+        <a href="#manifesto">Nossa beleza</a>
+      </nav>
+
+      <div class="header-actions">
+        <label class="search-box" aria-label="Buscar produtos">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="7"></circle><path d="m16 16 4 4"></path></svg>
+          <input id="search-input" type="search" placeholder="Buscar" />
+        </label>
+        <button class="bag-button" type="button" aria-label="Sacola de compras">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 8h14l1 13H4L5 8Z"></path><path d="M9 9V6a3 3 0 0 1 6 0v3"></path></svg>
+          <span class="bag-count" aria-live="polite">0</span>
+        </button>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero" id="novidades">
+        <div class="hero-copy">
+          <p class="eyebrow"><span></span> SEU RITUAL, SUAS REGRAS</p>
+          <h1>Você é a sua<br />melhor <em>versão.</em></h1>
+          <p class="hero-description">
+            Maquiagem que acompanha quem você é — e não quem esperam que você seja.
+            Encontre seus novos favoritos.
+          </p>
+          <a class="button button-dark" href="#produtos">Descubra seus favoritos <span aria-hidden="true">↗</span></a>
+          <div class="hero-note"><span class="note-mark">✳</span> Feito para todas as versões de você.</div>
+        </div>
+        <div class="hero-visual">
+          <img
+            src="https://images.unsplash.com/photo-1524504388940-b1c1722653e1?auto=format&fit=crop&w=1200&q=85"
+            alt="Mulher sorrindo com maquiagem natural e luz suave"
+          />
+          <div class="hero-sticker"><span>BELEZA</span><strong>é<br />sentir.</strong><span>✳</span></div>
+          <div class="image-caption">A sua beleza não precisa de legenda.</div>
+        </div>
+        <div class="hero-side-label">BELEZA REAL · TODOS OS DIAS</div>
+      </section>
+
+      <section class="trust-strip" aria-label="Compromissos da Entre Tons">
+        <span>✳ Beleza do seu jeito</span><span>◇ Produtos para seus momentos</span><span>✳ Escolha seus favoritos</span><span>◇ Pedidos pelo WhatsApp</span>
+      </section>
+
+      <section class="category-section section-wrap" id="categorias">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">UM UNIVERSO DE POSSIBILIDADES</p>
+            <h2>Do que você está <em>a fim?</em></h2>
+          </div>
+          <a class="text-link" href="#produtos">Ver todos os produtos <span aria-hidden="true">↗</span></a>
+        </div>
+        <div class="category-grid">
+          <a class="category-card category-lips" href="#produtos" data-filter-link="Lábios">
+            <img src="https://images.unsplash.com/photo-1586495777744-4413f21062fa?auto=format&fit=crop&w=760&q=80" alt="Batom em tons de rosa e vermelho" />
+            <span class="category-number">01 / COR</span>
+            <span class="category-title">Lábios <b aria-hidden="true">↗</b></span>
+          </a>
+          <a class="category-card category-face" href="#produtos" data-filter-link="Rosto">
+            <img src="https://images.unsplash.com/photo-1596462502278-27bfdc403348?auto=format&fit=crop&w=760&q=80" alt="Produtos de maquiagem para rosto" />
+            <span class="category-number">02 / PELE</span>
+            <span class="category-title">Rosto <b aria-hidden="true">↗</b></span>
+          </a>
+          <a class="category-card category-eyes" href="#produtos" data-filter-link="Olhos">
+            <img src="https://images.unsplash.com/photo-1512496015851-a90fb38ba796?auto=format&fit=crop&w=760&q=80" alt="Paleta de sombras coloridas" />
+            <span class="category-number">03 / OLHAR</span>
+            <span class="category-title">Olhos <b aria-hidden="true">↗</b></span>
+          </a>
+          <a class="category-card category-care" href="#produtos" data-filter-link="Autocuidado">
+            <img src="https://images.unsplash.com/photo-1608248543803-ba4f8c70ae0b?auto=format&fit=crop&w=760&q=80" alt="Produtos para um ritual de autocuidado" />
+            <span class="category-number">04 / PAUSA</span>
+            <span class="category-title">Autocuidado <b aria-hidden="true">↗</b></span>
+          </a>
+        </div>
+      </section>
+
+      <section class="products-section" id="produtos">
+        <div class="section-wrap">
+          <div class="section-heading product-heading">
+            <div>
+              <p class="eyebrow">ESCOLHIDOS A DEDO, COMO VOCÊ</p>
+              <h2>Pequenos grandes <em>favoritos.</em></h2>
+            </div>
+            <div class="filter-tabs" role="group" aria-label="Filtrar produtos">
+              <button class="filter-button active" type="button" data-filter="Todos">Tudo</button>
+              <button class="filter-button" type="button" data-filter="Lábios">Lábios</button>
+              <button class="filter-button" type="button" data-filter="Rosto">Rosto</button>
+              <button class="filter-button" type="button" data-filter="Olhos">Olhos</button>
+              <button class="filter-button" type="button" data-filter="Autocuidado">Autocuidado</button>
+            </div>
+          </div>
+          <div class="product-grid" id="product-grid" aria-live="polite"></div>
+          <p class="empty-state" hidden>Nenhum produto encontrado. Que tal buscar de outro jeito?</p>
+          <div class="center-action"><a class="button button-outline" href="#categorias">Encontre seu próximo favorito <span aria-hidden="true">↗</span></a></div>
+        </div>
+      </section>
+
+      <section class="manifesto" id="manifesto">
+        <div class="manifesto-image">
+          <img src="https://images.unsplash.com/photo-1531123897727-8f129e1688ce?auto=format&fit=crop&w=1100&q=85" alt="Mulher negra com expressão confiante e beleza natural" loading="lazy" />
+          <span class="manifesto-image-note">DO SEU JEITO. SEM DESCULPAS.</span>
+        </div>
+        <div class="manifesto-copy">
+          <p class="eyebrow">UM LEMBRETE, SÓ SEU</p>
+          <h2>Não é sobre<br />se transformar.<br />É sobre se <em>reconhecer.</em></h2>
+          <p>A gente acredita numa beleza que abre espaço, não que dita regras. Para todos os tons, os dias bons e os nem tanto — e para cada mulher ser exatamente quem quiser.</p>
+          <a class="text-link" href="#produtos">Vem conhecer a gente <span aria-hidden="true">↗</span></a>
+          <span class="manifesto-doodle" aria-hidden="true">✳</span>
+        </div>
+      </section>
+
+      <section class="newsletter">
+        <div>
+          <p class="eyebrow">UM CARINHO NA SUA CAIXA DE ENTRADA</p>
+          <h2>Novidades, beleza e<br /><em>um pouco de você.</em></h2>
+        </div>
+        <form class="newsletter-form">
+          <label for="email">Seu melhor e-mail</label>
+          <div class="email-field"><input id="email" type="email" placeholder="voce@email.com" required /><button type="submit" aria-label="Inscrever-se">↗</button></div>
+          <p class="newsletter-message" aria-live="polite">Novidades por e-mail serão ativadas quando a loja estiver publicada.</p>
+        </form>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <a class="wordmark footer-wordmark" href="#" aria-label="Entre Tons, página inicial"><span class="brand-primary">entre</span><span class="brand-secondary">tons</span><i>.</i></a>
+      <p>Beleza é se sentir em casa na própria pele.</p>
+      <div class="footer-meta"><span>© 2026 Entre Tons</span><span>Feito com carinho, para todas as suas versões. ✳</span></div>
+    </footer>
+
+    <div class="toast" role="status" aria-live="polite"></div>
+  </body>
+</html>
